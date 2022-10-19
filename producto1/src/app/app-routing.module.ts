@@ -10,12 +10,7 @@ const routes: Routes = [
     path: 'listado', 
     component: ListadoComponent,
     children: [
-      {
-        path: 'detalle', 
-        component: DetalleComponent,
-        children: [
-          {path: 'reproductor', component: ReproductorComponent}
-      ]}      
+      {path: 'detalle', component: DetalleComponent},
     ]},
   {path: '', redirectTo: '/listado', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent}
