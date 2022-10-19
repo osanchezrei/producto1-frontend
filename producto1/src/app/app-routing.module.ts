@@ -11,7 +11,6 @@ const routes: Routes = [
     component: ListadoComponent,
     children: [
       {path: 'detalle', component: DetalleComponent},
-      {path: 'reproductor', component: ReproductorComponent}
     ]},
   {path: '', redirectTo: '/listado', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent}
