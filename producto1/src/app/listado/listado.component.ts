@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { JUGADORES } from '../jugadores/jugadores.module';
+import { JUGADORES } from '../../data/jugadores';
 
 @Component({
   selector: 'app-listado',
