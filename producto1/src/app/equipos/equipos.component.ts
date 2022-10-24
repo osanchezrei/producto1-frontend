@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { JugadoresComponent } from '../jugadores/jugadores.component';
+
 
 @Component({
   selector: 'app-equipos',
@@ -6,5 +8,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./equipos.component.css'],
 })
 export class EquiposComponent {
-
 }

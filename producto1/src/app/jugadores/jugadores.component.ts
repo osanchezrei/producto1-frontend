@@ -7,5 +7,6 @@ import { JUGADORES } from '../../data/jugadores';
   styleUrls: ['./jugadores.component.css'],
 })
 export class JugadoresComponent {
-  jugadores = JUGADORES;
+  playerFilter = '';
+  jugadores = [];
 }

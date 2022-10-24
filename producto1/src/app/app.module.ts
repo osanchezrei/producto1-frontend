@@ -8,6 +8,9 @@ import { JugadoresComponent } from './jugadores/jugadores.component';
 import { DetalleComponent } from './detalle/detalle.component';
 import { ReproductorComponent } from './reproductor/reproductor.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FormsModule } from '@angular/forms';
+import { FilterPipe } from './pipes/filter.pipe';
+
 
 @NgModule({
   declarations: [
@@ -17,10 +20,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     DetalleComponent,
     ReproductorComponent,
     PageNotFoundComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
