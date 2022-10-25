@@ -1,12 +1,19 @@
 import { Component } from '@angular/core';
-import { JUGADORES } from '../../data/jugadores';
+import { Jugador, JUGADORES } from '../../data/jugadores';
 
 @Component({
   selector: 'app-jugadores',
   templateUrl: './jugadores.component.html',
   styleUrls: ['./jugadores.component.css'],
 })
+
 export class JugadoresComponent {
   playerFilter = '';
-  jugadores = [];
+  jugadores = JUGADORES;
+  selectedJugador!: Jugador;
+
+
+  onSelect(jugador: Jugador){
+    this.selectedJugador = jugador;
+  }
 }

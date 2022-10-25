@@ -5,12 +5,13 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FilterPipe implements PipeTransform {
 
-  transform(items: any[], filter: string): any {
-    if (!items) {
-      return [];
+  transform(value: any, arg: any) {
+    const results = [];
+    for(const jugador of value){
+      if (jugador.nombre.toLowerCase().indexOf(arg.toLowerCase()) > -1){
+        results.push(jugador);
+      }
     }
-    return items.filter(it => {
-      return it.toLowerCase().includes(filter);
-    });
+    return results;
   }
 }

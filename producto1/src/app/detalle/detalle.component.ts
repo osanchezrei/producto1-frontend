@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ReproductorComponent } from '../reproductor/reproductor.component';
+import { Component, Input, OnInit } from '@angular/core';
+import { Jugador } from 'src/data/jugadores';
 
 @Component({
   selector: 'app-detalle',
@@ -7,10 +7,9 @@ import { ReproductorComponent } from '../reproductor/reproductor.component';
   styleUrls: ['./detalle.component.css']
 })
 export class DetalleComponent implements OnInit {
-
-  constructor() { }
-
   ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
+  @Input() jugador!: Jugador;
 
 }
