@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Jugador } from 'src/data/jugadores';
 
 @Component({
@@ -6,10 +6,6 @@ import { Jugador } from 'src/data/jugadores';
   templateUrl: './detalle.component.html',
   styleUrls: ['./detalle.component.css']
 })
-export class DetalleComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+export class DetalleComponent{
   @Input() jugador!: Jugador;
-
 }

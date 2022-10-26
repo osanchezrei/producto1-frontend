@@ -12,7 +12,6 @@ export class JugadoresComponent {
   jugadores = JUGADORES;
   selectedJugador!: Jugador;
 
-
   onSelect(jugador: Jugador){
     this.selectedJugador = jugador;
   }

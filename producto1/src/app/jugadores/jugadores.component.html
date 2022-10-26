@@ -1,11 +1,18 @@
-<input
-    type="text"
-    class="forms-control"
-    placeholder="Buscar.."
-    [(ngModel)]="playerFilter"
-    name="filter"
-  />
-<div class="d-flex p-2">
+<div class="mb-3 m-3">
+  <label for="basic-url" class="form-label">Filtrar por nombre o posicion</label>
+  <div class="input-group">
+    <input
+        type="text"
+        class="forms-control"
+        placeholder="Dr..."
+        [(ngModel)]="playerFilter"
+        name="filter"
+        width="300px"
+        autofocus
+      />
+  </div>
+</div>
+<div class="d-flex p-2 pt-0">
   <div class="p-1">
     <ol class="list-group">
       <li
@@ -16,7 +23,7 @@
       >
       <div class="ms-2 me-auto">
         <div class="fw-bold">{{jugador.nombre}}</div>
-          Altura: {{jugador.altura}}
+          Altura: {{jugador.altura}} | Posición: {{jugador.posicion}}
         </div>
         <span class="badge bg-primary rounded-pill">{{jugador.id}}</span>
       </li>
