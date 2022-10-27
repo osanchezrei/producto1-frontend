@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Jugador, JUGADORES } from '../../data/jugadores';
+import { Jugador, JUGADORES } from '../../../data/jugadores';
 
 @Component({
   selector: 'app-jugadores',
